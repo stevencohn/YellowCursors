@@ -1,7 +1,7 @@
 # YellowCursors
 Yellow mouse cursor theme for Windows
 
-<img src="Yellow.png" width="226px" height="462px" />
+![alt text](Yellow.png "Yellow Cursors")
 
 ## Installation
 
