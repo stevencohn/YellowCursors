@@ -5,7 +5,8 @@ Yellow mouse cursor theme for Windows
 
 ## Installation
 
-Installation is simple. Just copy the cursors from this repo into C:\Windows\Cursors.
+Installation is simple. Just copy the cursors from this repo into C:\Windows\Cursors
+and then use the control panel to change the pointers.
 
 But if you'd like to automate the process, here's a script:
 
