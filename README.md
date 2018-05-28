@@ -36,3 +36,5 @@ Notice that install.ps1 forces a dynamic reload of cursors.
 This should work without requiring a logout/login or reboot.
 
 Enjoy!
+
+P.S. A very nice ico, cur, ani editor: [Greenfish Icon Editor Pro](http://greenfishsoftware.org/gfie.php)

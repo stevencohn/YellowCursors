@@ -18,7 +18,7 @@ New-ItemProperty $0 -Name 'Hand' -Value "$0\yellow_link.cur" -Force
 New-ItemProperty $0 -Name 'Help' -Value "$0\yellow_helpsel.cur" -Force
 New-ItemProperty $0 -Name 'IBeam' -Value '' -Force
 New-ItemProperty $0 -Name 'No' -Value "$0\yellow_aero_unavail.cur" -Force
-New-ItemProperty $0 -Name 'NWPen' -Value "$0\aero_pen.cur" -Force
+New-ItemProperty $0 -Name 'NWPen' -Value "$0\yellow_pen.cur" -Force
 New-ItemProperty $0 -Name 'SchemeSource' -Value 2 -Type dword -Force
 New-ItemProperty $0 -Name 'SizeAll' -Value "$0\yellow_move.cur" -Force
 New-ItemProperty $0 -Name 'SizeNESW' -Value "$0\yellow_nesw.cur" -Force
