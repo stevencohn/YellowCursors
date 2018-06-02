@@ -36,13 +36,17 @@ $ProgressPreference = 'SilentlyContinue'
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 Invoke-WebRequest -Uri $src -OutFile $zip
 Expand-Archive -Path $zip -DestinationPath "${env:TEMP}\" -Force
-Copy-Item "$exp\*.ani" C:\Windows\Cursors\ -Force
-Copy-Item "$exp\*.cur" C:\Windows\Cursors\ -Force
-Remove-Item $zip -Confirm:$False
-Remove-Item $exp -Recurse -Force -Confirm:$False
+Push-Location $exp
+Copy-Item *.ani C:\Windows\Cursors\ -Force
+Copy-Item *.cur C:\Windows\Cursors\ -Force
 
 # install
 .\install.ps1
+
+# clean up
+Pop-Location
+Remove-Item $zip -Confirm:$False
+Remove-Item $exp -Recurse -Force -Confirm:$False
 ```
 
 ### As Administrator
