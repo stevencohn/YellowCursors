@@ -24,11 +24,10 @@ $null = New-ItemProperty $0 -Name 'Crosshair' -Value '' -Force
 $null = New-ItemProperty $0 -Name 'Hand' -Value "$p\yellow_link.cur" -Force
 $null = New-ItemProperty $0 -Name 'Help' -Value "$p\yellow_helpsel.cur" -Force
 $null = New-ItemProperty $0 -Name 'IBeam' -Value '' -Force
-$null = New-ItemProperty $0 -Name 'No' -Value "$p\yellow_aero_unavail.cur" -Force
+$null = New-ItemProperty $0 -Name 'No' -Value "$p\aero_unavail.cur" -Force
 $null = New-ItemProperty $0 -Name 'NWPen' -Value "$p\yellow_pen.cur" -Force
 $null = New-ItemProperty $0 -Name 'Person' -Value "$p\yellow_person.cur" -Force
 $null = New-ItemProperty $0 -Name 'Pin' -Value "$p\yellow_pin.cur" -Force
-$null = New-ItemProperty $0 -Name 'Scheme Source' -Value 2 -Type dword -Force
 $null = New-ItemProperty $0 -Name 'SizeAll' -Value "$p\yellow_move.cur" -Force
 $null = New-ItemProperty $0 -Name 'SizeNESW' -Value "$p\yellow_nesw.cur" -Force
 $null = New-ItemProperty $0 -Name 'SizeNS' -Value "$p\yellow_ns.cur" -Force
@@ -36,6 +35,9 @@ $null = New-ItemProperty $0 -Name 'SizeNWSE' -Value "$p\yellow_nwse.cur" -Force
 $null = New-ItemProperty $0 -Name 'SizeWE' -Value "$p\yellow_ew.cur" -Force
 $null = New-ItemProperty $0 -Name 'UpArrow' -Value "$p\yellow_up.cur" -Force
 $null = New-ItemProperty $0 -Name 'Wait' -Value "$p\aero_busy.ani" -Force
+
+# Scheme Source -- 0=Windows Default, 1=User Scheme, 2=System Scheme
+$null = New-ItemProperty $0 -Name 'Scheme Source' -Value 1 -Type dword -Force
 
 # reload system cursors
 $cs = @'

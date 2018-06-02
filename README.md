@@ -1,5 +1,5 @@
 # YellowCursors
-Yellow mouse cursor theme for Windows
+Yellow mouse cursor theme for Windows based on the aero cursors.
 
 ![alt text](Yellow.png "Yellow Cursors")
 
