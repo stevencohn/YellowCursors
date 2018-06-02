@@ -18,6 +18,8 @@ git clone https://github.com/stevencohn/YellowCursors.git
 Push-Location YellowCursors
 
 # install
+Copy-Item *.ani C:\Windows\Cursors\ -Force
+Copy-Item *.cur C:\Windows\Cursors\ -Force
 .\install.ps1
 
 # clean up (optional)
@@ -37,10 +39,10 @@ $ProgressPreference = 'SilentlyContinue'
 Invoke-WebRequest -Uri $src -OutFile $zip
 Expand-Archive -Path $zip -DestinationPath "${env:TEMP}\" -Force
 Push-Location $exp
-Copy-Item *.ani C:\Windows\Cursors\ -Force
-Copy-Item *.cur C:\Windows\Cursors\ -Force
 
 # install
+Copy-Item *.ani C:\Windows\Cursors\ -Force
+Copy-Item *.cur C:\Windows\Cursors\ -Force
 .\install.ps1
 
 # clean up
