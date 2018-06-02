@@ -8,9 +8,27 @@ Yellow mouse cursor theme for Windows
 Installation is simple. Just copy the cursors from this repo into C:\Windows\Cursors
 and then use the control panel to change the pointers.
 
-But if you'd like to automate the process, here's a script:
+But if you'd like to automate the process, here are two script options:
+
+### Option 1 - Git
 
 ```powershell
+# clone
+git clone https://github.com/stevencohn/YellowCursors.git
+Push-Location YellowCursors
+
+# install
+.\install.ps1
+
+# clean up (optional)
+Pop-Location
+Remove-Item YellowCursors -Recurse -Force -Confirm:$False
+```
+
+### Option 2 - Native PowerShell
+
+```powershell
+# download
 $src='https://github.com/stevencohn/YellowCursors/archive/master.zip'
 $zip="${env:TEMP}\YellowCursors.zip"
 $exp="${env:TEMP}\YellowCursors-master"
@@ -22,13 +40,12 @@ Copy-Item "$exp\*.ani" C:\Windows\Cursors\ -Force
 Copy-Item "$exp\*.cur" C:\Windows\Cursors\ -Force
 Remove-Item $zip -Confirm:$False
 Remove-Item $exp -Recurse -Force -Confirm:$False
-```
 
-Then run the install.ps1 script
-
-```powershell
+# install
 .\install.ps1
 ```
+
+### As Administrator
 
 Of course, run both of these as administrator.
 

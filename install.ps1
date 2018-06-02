@@ -3,6 +3,12 @@
 Install the yellow mouse cursor theme.
 #>
 
+<#
+Article https://blogs.technet.microsoft.com/heyscriptingguy/2013/01/17/use-powershell-to-change-the-mouse-pointer-scheme/
+Article http://thecomputermanagersden.blogspot.com/2014/05/powershell-script-to-customize-windows.html
+SystmParametersInfo https://msdn.microsoft.com/en-us/library/windows/desktop/ms724947(v=vs.85).aspx
+#>
+
 # create Yellow scheme
 $0 = 'HKCU:\Control Panel\Cursors'
 $p = '%SystemRoot%\cursors'
