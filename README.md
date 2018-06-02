@@ -54,4 +54,6 @@ This should work without requiring a logout/login or reboot.
 
 Enjoy!
 
-P.S. A very nice ico, cur, ani editor: [Greenfish Icon Editor Pro](http://greenfishsoftware.org/gfie.php)
+P.S. Yellow is (255,245,0)
+
+P.P.S. A very nice ico, cur, ani editor: [Greenfish Icon Editor Pro](http://greenfishsoftware.org/gfie.php)
