@@ -16,14 +16,10 @@ But if you'd like to automate the process, here are two script options:
 # clone
 git clone https://github.com/stevencohn/YellowCursors.git
 Push-Location YellowCursors
-
 # install
-Copy-Item *.ani C:\Windows\Cursors\ -Force
-Copy-Item *.cur C:\Windows\Cursors\ -Force
 .\install.ps1
-
-# clean up (optional)
 Pop-Location
+# clean up
 Remove-Item YellowCursors -Recurse -Force -Confirm:$False
 ```
 
@@ -41,8 +37,6 @@ Expand-Archive -Path $zip -DestinationPath "${env:TEMP}\" -Force
 Push-Location $exp
 
 # install
-Copy-Item *.ani C:\Windows\Cursors\ -Force
-Copy-Item *.cur C:\Windows\Cursors\ -Force
 .\install.ps1
 
 # clean up
