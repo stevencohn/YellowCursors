@@ -10,8 +10,8 @@ SystmParametersInfo https://msdn.microsoft.com/en-us/library/windows/desktop/ms7
 #>
 
 # copy cursors
-Copy-Item *.ani C:\Windows\Cursors\ -Force -ErrorAction SilentlyContinue
-Copy-Item *.cur C:\Windows\Cursors\ -Force -ErrorAction SilentlyContinue
+Copy-Item yellow_*.ani C:\Windows\Cursors\ -Force -ErrorAction SilentlyContinue
+Copy-Item yellow_*.cur C:\Windows\Cursors\ -Force -ErrorAction SilentlyContinue
 
 # create Yellow scheme
 $0 = 'HKCU:\Control Panel\Cursors'
